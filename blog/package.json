@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon --inspect src/index.js",
+    "sass": "node-sass -w src/resources/scss/ -o src/public/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -28,6 +29,8 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "node-as": "^1.0.0",
+    "node-sass": "^6.0.1",
     "nodemon": "^2.0.12"
   }
 }

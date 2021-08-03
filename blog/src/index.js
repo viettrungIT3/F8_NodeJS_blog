@@ -31,5 +31,5 @@ app.get('/news', function (req, res) {
 // 127.0.0.1 - localhost
 
 app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`);
+    console.log(`Example app listening at http://localhost::${port}`);
 })
