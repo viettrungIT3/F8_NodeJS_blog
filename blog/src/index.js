@@ -7,6 +7,11 @@ const port = 3000;
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(express.urlencoded({
+    extended: true
+}));
+app.use(express.json());
+
 
 // HTTP logger
 app.use(morgan('combined'));
@@ -33,7 +38,10 @@ app.get('/search', function (req, res) {
 });
 
 app.post('/search', function (req, res) {
-    res.render('search');
+
+    console.log(req.body);
+
+    res.send('');
 });
 
 // 127.0.0.1 - localhost
