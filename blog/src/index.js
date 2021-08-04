@@ -28,6 +28,14 @@ app.get('/news', function (req, res) {
     res.render('news');
 });
 
+app.get('/search', function (req, res) {
+    res.render('search');
+});
+
+app.post('/search', function (req, res) {
+    res.render('search');
+});
+
 // 127.0.0.1 - localhost
 
 app.listen(port, () => {
